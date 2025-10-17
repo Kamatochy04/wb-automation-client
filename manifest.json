@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Table Clicker + Fill",
+  "version": "1.0.0",
+  "description": "Кликает в таблице, при навигации вставляет сообщение в textarea.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["<all_urls>"],
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "tabs",
+    "activeTab",
+    "scripting",
+    "storage",
+    "alarms"
+  ]
+}

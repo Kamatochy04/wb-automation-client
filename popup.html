@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Управление циклом</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 15px;
+        min-width: 200px;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        transition: background-color 0.2s;
+      }
+      #startButton {
+        background-color: #4caf50; /* Зеленый */
+        color: white;
+      }
+      #startButton:hover {
+        background-color: #45a049;
+      }
+      #resetButton {
+        background-color: #f44336; /* Красный */
+        color: white;
+      }
+      #resetButton:hover {
+        background-color: #da190b;
+      }
+      #indexDisplay {
+        margin-top: 5px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 13px;
+        background-color: #f9f9f9;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Управление шагами</h3>
+
+    <div id="indexDisplay">Текущий индекс: 0</div>
+
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 10px 0" />
+
+    <button id="startButton">▶️ Кликнуть следующий элемент</button>
+
+    <button id="resetButton">🔄 Сбросить счетчик (Начать с 0)</button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
